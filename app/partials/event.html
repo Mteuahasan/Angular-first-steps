@@ -1,0 +1,15 @@
+<div class="back"><a href="#/home"><i class="fa fa-times"></i></a> <h1 id="event-title" ng-bind-html="title()"></h1></div>
+
+
+<div class="description-container">
+  <div class="description" ng-bind-html="description()"></div><br>
+  <strong>Lieu :</strong><div class="lieu" ng-bind-html="lieu()"></div>
+  <strong>Adresse :</strong><div class="adresse" ng-bind-html="adresse()"></div>
+</div>
+
+<div class="fav" ng-click="storeFav()"><i ng-class="{'fa fa-star' : canFav === true, 'fa fa-star-o' : canFav === false}"></i></div>
+
+<map zoom="17" center="current-location">
+  <marker position="current-location" title="Ma position"></marker>
+  <marker position="{{eventLat}},{{eventLon}}" title="{{title()}}"></marker>
+</map>

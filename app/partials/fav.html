@@ -1,0 +1,12 @@
+  <div class="search">
+    <div class="back back-fav"><a href="#/home"><i class="fa fa-times"></i></a></div>
+    <input type="text" ng-model="search" placeholder="Rechercher"/>
+  </div>
+  <div class="activities-container">
+    <div class="activity" ng-repeat="event in events | filter:search"><a href="#/event/{{event.id}}"><span ng-bind-html="event.nom"></span></a></div>
+  </div>
+
+  <map zoom="17" center="current-location">
+    <marker position="current-location" title="Ma position"></marker>
+    <marker position="{{event.lat}},{{event.lon}}" title="Hello World!" ng-repeat="event in events"></marker>
+  </map>

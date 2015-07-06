@@ -1,0 +1,108 @@
+html, body {
+  margin: 0;padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+map {
+  position: absolute;
+  width: 50%;
+  top: 0;right: 0;bottom: 0;
+}
+
+.container {
+  width: 50%;
+}
+
+.search input {
+  width: 100%;
+  background-color: #34495E;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  text-align: center;
+  color: #ccc;
+  padding: 25px 0;
+  text-transform: uppercase;
+}
+
+.back {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 25px;
+  background-color: #34495E;
+  color: #ccc;
+}
+
+.back a {
+  position: absolute;
+  left: 10px;top: 10px;
+  color: #ccc;
+}
+
+.activity {
+  display: inline-block;
+  width: 28%;
+  height: 200px;
+  background-color: #34495E;
+  vertical-align: top;
+  margin: 1%;
+  padding: 10px;
+}
+
+.activity a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.activity a span {
+  color: #ccc;
+}
+
+.activities-container{
+  position: absolute;
+  width: 50%;
+  top: 71px;bottom: 0;left: 0;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.description {
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.description-container{
+  position: absolute;
+  width: 50%;
+  top: 93px;bottom: 0;left: 0;
+  text-align: center;
+  overflow-y: scroll;
+}
+
+.fav {
+  font-size: 24px;
+  margin: 15px 0 0 25px;
+  cursor: pointer;
+}
+
+.fav-link {
+  position: absolute;
+  color: #ccc;
+  left: 10px;top: 7px;
+  font-size: 40px;
+}
+
+.fav-link a{
+  color: #ccc;
+}
+
+.back-fav {
+  position: absolute;
+}
+
+#event-title{
+  font-size: 16px;
+}
