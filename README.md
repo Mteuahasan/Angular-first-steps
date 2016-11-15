@@ -1,4 +1,4 @@
-# angularTest
+# Angular first steps
 Test using angular and Paris's API
 
 Prerequisites : node
